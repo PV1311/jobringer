@@ -828,6 +828,28 @@ body {
   .employer-grid {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  /* Mobile App Section - Tablet */
+  .app-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .app-info h2 {
+    font-size: 2rem;
+  }
+
+  .app-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* Job Locations - Tablet */
+  .locations-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
 }
 
 @media (max-width: 48rem) {
@@ -968,27 +990,5 @@ body {
 
   .section-title {
     font-size: 1.8rem;
-    margin-bottom: 2rem;
-  }
-
-  .carousel-container {
-    position: relative;
-    overflow: hidden;
-  }
-
-  .jobs-carousel {
-    display: flex;
-    transition: transform 0.5s ease;
-    gap: 1rem;
-  }
-
-  .job-card {
-    flex: 0 0 calc(100% - 2rem);
-    margin: 0 1rem;
-    min-height: 20rem;
-  }
-
-  .job-title {
-    font-size: 1.1rem;
   }
 }
