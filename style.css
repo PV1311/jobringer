@@ -830,6 +830,28 @@ body {
   }
 }
 
+.header {
+  position: relative;
+}
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.nav-menu a {
+  display: inline-block;
+
+  text-align: center;
+  padding: 0.7rem 0.55rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  margin: 0.25rem 0;
+}
+
 @media (max-width: 48rem) {
   .container {
     padding: 0 1rem;
@@ -842,6 +864,7 @@ body {
   /* Header Mobile Fixes */
   .header {
     padding: 1rem 0;
+    position: relative;
   }
 
   .header-content {
