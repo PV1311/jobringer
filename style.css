@@ -852,6 +852,18 @@ body {
   margin: 0.25rem 0;
 }
 
+.grid-container {
+  padding: 0 5rem;
+}
+
+.stats-grid {
+  width: 75rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 16rem));
+  gap: 5.5rem;
+  text-align: center;
+}
+
 @media (max-width: 48rem) {
   .grid-container {
     padding: 0 5rem;
@@ -1038,13 +1050,25 @@ body {
     font-size: 1.1rem;
   }
 
-  .locations-container {
-    display: flex;
-    flex-direction: column;
+  .grid-container {
+    padding: 0 5rem;
   }
 
-  .footer-content {
-    display: flex;
-    flex-direction: column;
+  .stats-grid {
+    width: 75rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 16rem));
+    gap: 5.5rem;
+    text-align: center;
   }
+}
+
+.locations-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
 }
