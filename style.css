@@ -12,9 +12,9 @@ body {
 }
 
 .container {
-  max-width: 75rem;
+  max-width: 76rem;
   margin: 0 auto;
-  padding: 0 1.25rem;
+  padding: 0 1.24rem;
   z-index: 2;
 }
 
@@ -30,14 +30,14 @@ body {
 
 .header-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   gap: 1.25rem;
 }
 
 .logo {
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 0.625rem;
 }
@@ -60,7 +60,6 @@ body {
 
 .nav-menu {
   display: flex;
-  list-style: none;
   gap: 1.875rem;
   align-items: center;
 }
@@ -820,7 +819,8 @@ body {
 }
 
 /* Mobile Responsive */
-@media (max-width: 64rem) {
+
+@media (max-width: 62rem) {
   .job-card {
     flex: 0 0 calc(50% - 0.781rem);
   }
@@ -853,7 +853,22 @@ body {
 }
 
 @media (max-width: 48rem) {
+  .grid-container {
+    padding: 0 5rem;
+  }
+
+  .stats-grid {
+    width: 75rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 16rem));
+    gap: 5.5rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 36rem) {
   .container {
+    max-width: 75rem;
     padding: 0 1rem;
   }
   .app-content {
@@ -869,7 +884,7 @@ body {
 
   .header-content {
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
     gap: 1rem;
   }
 
@@ -935,6 +950,7 @@ body {
   }
 
   .search-input {
+    width: 100%;
     padding: 1rem;
     border-radius: 0.75rem;
     background: white;
